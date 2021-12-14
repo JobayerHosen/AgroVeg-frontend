@@ -1,0 +1,17 @@
+.login-heading {
+  text-align: center;
+}
+
+.login-panel {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-top: -280px;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.login {
+  padding-right: 1.5rem;
+}

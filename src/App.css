@@ -1,38 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rozha+One&display=swap");
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #62b875;
+}
+
+hr {
+  z-index: 1;
+}
+
+body {
+  background-color: #ffffff;
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #eebb4d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-green {
+  background-color: #70cf84;
+  color: #fff;
+  border: 1px solid #62b875;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-cursive {
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+}
+.text-cursive {
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+}
+.bg-green {
+  background-color: #70cf84;
+  color: #fff;
+}
+.bg-gr {
+  background: linear-gradient(90deg, #20544a, #9dc586);
+  color: #fff;
+}
+.bg-warning {
+  background-color: #eebb4d !important;
+  color: #134f29;
 }
 
-.App-link {
-  color: #61dafb;
+.text-green {
+  color: #70cf84;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.paper {
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.375rem -0.0625rem hsla(0, 0%, 8%, 0.12), 0 0.125rem 0.25rem -0.0625rem hsla(0, 0%, 8%, 0.07);
+  border-radius: 0.6rem;
+  padding: 0.7rem;
+}
+
+.nav-pills .nav-link {
+  font-weight: bold;
+  box-shadow: 0 0px 2px 0px #00000040;
+  margin-bottom: 0.8rem;
+  color: #000;
+}
+.nav-pills .nav-link.active {
+  box-shadow: 0 1px 4px 0px #00000070;
+  color: #000;
+  background: #09dd963d;
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 14px;
   }
 }

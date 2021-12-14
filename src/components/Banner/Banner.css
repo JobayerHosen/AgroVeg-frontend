@@ -1,0 +1,94 @@
+.banner {
+  background-image: url("../../assets/banner_bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh);
+}
+.banner-left {
+  color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner-right {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.banner-title {
+  z-index: 10;
+  color: #000;
+  text-align: left;
+  /* font-weight: bold; */
+  font-size: 3.8rem;
+  font-weight: 800;
+  /* font-family: 'Rozha One', serif; */
+}
+
+.bg-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 2rem;
+  /* border-radius: 1.2rem; */
+}
+
+@media screen and (max-width: 992px) {
+  .banner-left {
+    height: 50vh;
+    justify-content: flex-start;
+  }
+  .banner-title {
+    padding-top: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .banner-right {
+    position: relative;
+    height: 50vh;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .bg-wrapper {
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 60%;
+    height: auto;
+  }
+  .bg-wrapper img {
+    width: 100%;
+    height: auto;
+    object-position: right;
+    border-radius: 2rem;
+    /* border-radius: 1.2rem; */
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .bg-wrapper {
+    width: 90%;
+    height: auto;
+  }
+  .banner-left {
+    height: 50vh;
+    padding-top: 1rem;
+  }
+  .banner-right {
+    height: 45vh;
+  }
+  .banner-title {
+    padding-top: 4rem;
+    font-size: 3.4rem;
+  }
+}
