@@ -2,13 +2,16 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AdminRoute from "./components/AdminRoute/AdminRoute";
+import Features from "./components/Features/Features";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
-import ManageUsers from "./components/ManageUsers/ManageUsers";
+import Navigation from "./components/Navigation/Navigation";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Profile from "./components/Profile/Profile";
+import Shop from "./components/Shop/Shop";
 import Signup from "./components/Signup/Signup";
 import AuthProvider from "./contexts/AuthProvider";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -19,12 +22,16 @@ function App() {
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route exact path="/home">
+            <Route path="/home">
               <Home></Home>
             </Route>
-            {/* <Route path="/explore">
-              <Explore></Explore>
-            </Route> */}
+            <Route path="/shop">
+              <Shop></Shop>
+            </Route>
+            <Route path="/about">
+              <Navigation></Navigation>
+              <Features></Features>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
@@ -34,8 +41,8 @@ function App() {
             <PrivateRoute path="/profile">
               <Profile></Profile>
             </PrivateRoute>
-            <AdminRoute path="/users">
-              <ManageUsers></ManageUsers>
+            <AdminRoute path="/dashboard">
+              <Dashboard></Dashboard>
             </AdminRoute>
             <Route path="*">
               <h1>Page Not Found</h1>

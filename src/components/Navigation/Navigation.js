@@ -20,8 +20,11 @@ const Navigation = () => {
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
-              <NavLink to="/explore" className="nav-link">
-                Explore
+              <NavLink to="/shop" className="nav-link">
+                Shop
+              </NavLink>
+              <NavLink to="/about" className="nav-link">
+                About
               </NavLink>
             </Nav>
             {!user ? (
@@ -80,11 +83,11 @@ const Navigation = () => {
                         <li className="border-bottom d-block py-1">
                           <NavLink
                             className="d-inline-block text-decoration-none   me-3"
-                            to="/users"
+                            to="/dashboard"
                             activeStyle={{ color: "#ff3344" }}
                           >
-                            <i className="bi bi-people-fill me-2 text-green"></i>
-                            Manage Users
+                            <i className="bi bi-ui-checks-grid me-2 text-green"></i>
+                            Dashboard
                           </NavLink>
                         </li>
                       )}

@@ -3,7 +3,7 @@ import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import Navigation from "../Navigation/Navigation";
 
-const ManageUsers = () => {
+const Dashboard = () => {
   return (
     <div style={{ backgroundColor: "#f8f9fa", minHeight: "100vh" }}>
       <Navigation></Navigation>
@@ -11,7 +11,7 @@ const ManageUsers = () => {
         <div className="paper mt-5 text-start">
           <div className="paper-top">
             <h3 className="border-bottom pb-3">
-              <i className="bi bi-people-fill"></i> Manage Users
+              <i className="bi bi-ui-checks-grid"></i> Dashboard
             </h3>
           </div>
           <div className="paper-body pb-3">
@@ -20,10 +20,14 @@ const ManageUsers = () => {
                 <Col sm={3}>
                   <Nav variant="pills" className="flex-column fs-bold">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">All Users</Nav.Link>
+                      <Nav.Link className="py-1 d-flex justify-content-between align-items-center " eventKey="first">
+                        All Users <i style={{ opacity: "0.4" }} className="bi bi-people fs-1 text-success"></i>
+                      </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Manage Users</Nav.Link>
+                      <Nav.Link className="py-1 d-flex justify-content-between align-items-center" eventKey="second">
+                        All Orders <i style={{ opacity: "0.4" }} className="bi bi-bag-check fs-1 text-success"></i>
+                      </Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
@@ -46,7 +50,7 @@ const ManageUsers = () => {
   );
 };
 
-export default ManageUsers;
+export default Dashboard;
 
 const AllUsers = () => {
   const { user } = useAuth();

@@ -5,6 +5,7 @@ import Features from "../Features/Features";
 import Services from "../Services/Services";
 import Benefits from "../Benefits/Benefits";
 import Footer from "../Footer/Footer";
+import FeaturedProducts from "../FeaturedProducts/FeaturedProducts";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner></Banner>
       <Features></Features>
       <Services></Services>
+      <FeaturedProducts></FeaturedProducts>
       <Benefits></Benefits>
       <Footer></Footer>
     </div>
