@@ -135,7 +135,7 @@ const useFirebase = () => {
   };
 
   useEffect(() => {
-    getUserRole(user?.uid);
+    if (user) getUserRole(user?.uid);
   }, [user, auth]);
 
   //   LOG OUT

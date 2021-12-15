@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
+import Cart from "../Cart/Cart";
 import Navigation from "../Navigation/Navigation";
 
 const Profile = () => {
@@ -23,7 +24,13 @@ const Profile = () => {
                       <Nav.Link eventKey="first">General</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Manage Account</Nav.Link>
+                      <Nav.Link eventKey="second">Cart</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">My Orders</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="fourth">Manage Account</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
@@ -33,6 +40,12 @@ const Profile = () => {
                       <General></General>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
+                      <Cart></Cart>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                      <h1>...</h1>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fourth">
                       <h1>...</h1>
                     </Tab.Pane>
                   </Tab.Content>

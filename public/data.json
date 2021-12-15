@@ -1,6 +1,5 @@
 [
   {
-    "id": 0,
     "name": "Fresh Orange Tomato",
     "price": 12.0,
     "category": "Vegetable",
@@ -8,7 +7,6 @@
     "img": "https://i.ibb.co/xFhn4Jc/h-product02.jpg"
   },
   {
-    "id": 1,
     "name": "Fresh Blackberry",
     "price": 50,
     "category": "Fruit",
@@ -16,7 +14,6 @@
     "img": "https://i.ibb.co/mqCdx9d/h-product08.jpg"
   },
   {
-    "id": 2,
     "name": "Fresh Orange",
     "price": 36,
     "category": "Fruit",
@@ -24,7 +21,6 @@
     "img": "https://i.ibb.co/23Y3jZ9/h-product01.jpg"
   },
   {
-    "id": 3,
     "name": "Green Brocoli",
     "price": 23,
     "category": "Vegetable",
@@ -32,7 +28,6 @@
     "img": "https://i.ibb.co/p3XkDt4/h-product04.jpg"
   },
   {
-    "id": 4,
     "name": "Whole Salmon",
     "price": 49,
     "category": "Fish",
@@ -40,7 +35,6 @@
     "img": "https://i.ibb.co/pXxRJFK/h-product06.jpg"
   },
   {
-    "id": 5,
     "name": "Fresh Bean",
     "price": 10,
     "category": "Vegetable",
@@ -48,7 +42,6 @@
     "img": "https://i.ibb.co/fX7HV2W/h-product07.jpg"
   },
   {
-    "id": 6,
     "name": "Fresh Cucumber",
     "price": 15,
     "category": "Vegetable",
@@ -56,7 +49,6 @@
     "img": "https://i.ibb.co/sFZRMLD/h-product05.jpg"
   },
   {
-    "id": 7,
     "name": "Fresh Meat",
     "price": 2342,
     "category": "Meat",
@@ -64,7 +56,6 @@
     "img": "https://i.ibb.co/6Fp6D1g/h-product03.jpg"
   },
   {
-    "id": 8,
     "name": "Fresh Avocado",
     "price": 25,
     "category": "Fruit",
@@ -72,7 +63,6 @@
     "img": "https://i.ibb.co/fM52yFj/shop-item01.jpg"
   },
   {
-    "id": 9,
     "name": "Dragon Fruit",
     "price": 60,
     "category": "Fruit",

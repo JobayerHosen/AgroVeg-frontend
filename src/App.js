@@ -2,16 +2,15 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AdminRoute from "./components/AdminRoute/AdminRoute";
-import Features from "./components/Features/Features";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
-import Navigation from "./components/Navigation/Navigation";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Profile from "./components/Profile/Profile";
 import Shop from "./components/Shop/Shop";
 import Signup from "./components/Signup/Signup";
 import AuthProvider from "./contexts/AuthProvider";
 import Dashboard from "./components/Dashboard/Dashboard";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -29,8 +28,7 @@ function App() {
               <Shop></Shop>
             </Route>
             <Route path="/about">
-              <Navigation></Navigation>
-              <Features></Features>
+              <About></About>
             </Route>
             <Route path="/login">
               <Login></Login>
