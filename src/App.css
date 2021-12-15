@@ -35,6 +35,15 @@ body {
   border: 1px solid #62b875;
 }
 
+.btn-gr-red {
+  background: linear-gradient(90deg, rgb(255, 136, 0), #f00) !important;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  margin-bottom: -2.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
 .btn-cursive {
   font-family: "Kaushan Script", cursive;
   font-weight: bold;
@@ -44,7 +53,7 @@ body {
   font-weight: bold;
 }
 .bg-green {
-  background-color: #70cf84;
+  background-color: #9cc623;
   color: #fff;
 }
 .bg-gr {
@@ -57,7 +66,7 @@ body {
 }
 
 .text-green {
-  color: #70cf84;
+  color: #9cc623;
 }
 
 .paper {

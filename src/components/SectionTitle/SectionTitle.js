@@ -1,11 +1,11 @@
 import React from "react";
 import "./SectionTitle.css";
 
-const SectionTitle = ({ title, children, color }) => {
+const SectionTitle = ({ subtitle, children, color }) => {
   return (
     <div className={`section-title ${color}`}>
-      <h1>{title}</h1>
-      <p>{children}</p>
+      <h5>{subtitle}</h5>
+      <h1>{children}</h1>
     </div>
   );
 };
