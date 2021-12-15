@@ -37,7 +37,7 @@ const Dashboard = () => {
                       <AllUsers></AllUsers>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <h1>...</h1>
+                      <AllOrders></AllOrders>
                     </Tab.Pane>
                   </Tab.Content>
                 </Col>
@@ -81,6 +81,51 @@ const AllUsers = () => {
               </td>
               <td>{usr?.displayName}</td>
               <td>{usr?.email}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+const AllOrders = () => {
+  const { user } = useAuth();
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://agroveg.herokuapp.com/orders`)
+      .then((res) => res.json())
+      .then((data) => setOrders(data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  return (
+    <div className="table-responsive">
+      <table className="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col"># </th>
+            <th scope="col">name</th>
+            <th scope="col">email</th>
+            <th scope="col">order id</th>
+            <th scope="col">Items </th>
+            <th scope="col">Items </th>
+          </tr>
+        </thead>
+        <tbody className="align-middle">
+          {orders.map((order, index) => (
+            <tr key={order?._id + index}>
+              <td>{index + 1}</td>
+              <td>{order?.uName}</td>
+              <td>{order?.email}</td>
+              <td>{order?._id}</td>
+              <td>{order?.products?.length}</td>
+              <td>
+                {order?.products.map((item) => (
+                  <li>{item.name} </li>
+                ))}
+              </td>
             </tr>
           ))}
         </tbody>

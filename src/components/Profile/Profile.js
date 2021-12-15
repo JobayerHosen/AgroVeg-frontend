@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import Cart from "../Cart/Cart";
+import MyOrders from "../MyOrders/MyOrders";
 import Navigation from "../Navigation/Navigation";
 
 const Profile = () => {
@@ -43,7 +44,7 @@ const Profile = () => {
                       <Cart></Cart>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <h1>...</h1>
+                      <MyOrders></MyOrders>
                     </Tab.Pane>
                     <Tab.Pane eventKey="fourth">
                       <h1>...</h1>
